@@ -1,0 +1,214 @@
+/* @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../fonts/Inter-Bold.ttf');
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Medium.ttf');
+}
+@font-face {
+    font-family: 'Inter-Light';
+    src: url('../fonts/Inter-Light.ttf');
+} */
+
+:root {
+    --nav-bg-blue: #00296B;
+    --nav-bg-deep-blue: #150925;
+    --nav-hover-grey: #33415C;
+    --btn-bg-blue: #0091e6;
+    --hero-bg-grey: #979DAC; 
+    --tile-hover-blue: #005cd5;
+
+    --btn-blue-main: #0091e6;
+    --btn-blue-dark: #3844ca;
+
+    --ato-bright-blue: #3844ca;
+    --ato-deep-blue: #150925;
+    --ato-sky-blue: #ceebf8;
+    --ato-light-ocean-blue: #9cdcf8;
+    --ato-ocean-blue: #0091e6;
+    --ato-dark-ocean-blue: #005cd5;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    transition: background-color 0.4s linear, padding-bottom 0.5s linear, border-bottom 0.5s linear;
+    background: var(--nav-bg-deep-blue);
+}
+
+.nav-container.affix #main-navbar {
+    border-bottom: 0 !important;
+}
+
+.nav-bg {
+    opacity: 0.4;
+}
+
+#main-navbar {
+    position: relative;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 !important;
+    border-bottom: 1px solid hsla(0,0%,100%,0.1);
+}
+
+.affix {
+    background-color: var(--nav-bg-deep-blue) !important;
+}
+
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 45px;
+}
+
+.navbar-expand-lg > .btn:hover {
+    background-color: var(--btn-blue-main) !important;
+    color: white !important;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    color: #fff !important;
+}
+.navbar-brand {
+    font-size: 35px !important;
+}
+.nav-link {
+    margin-right: 5px;
+    padding: 5px 10px !important;
+    font-size: 30px !important;
+}
+
+.nav-link:hover {
+    background-color: var(--btn-bg-blue);
+    border-radius: 5px;
+    color: white !important;
+}
+
+.navbar-toggler {
+    margin-right: 10px;
+}
+
+.nav a {
+    color: white !important;
+    font-size: 1.8em !important;
+}
+
+.nav li {
+    padding-right: 5px;
+}
+
+#welcome {
+    position: relative;
+}
+
+
+
+
+
+
+@media (max-width: 1170px) {
+    .main-container {
+        margin-top: calc(20vh + 280px)
+    }
+}
+
+@media (min-width: 992px) {
+    #navbarSupportedContent {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 991px) {
+    #navbarSupportedContent {
+        text-align: centre;
+        background-color: var(--nav-bg-blue);
+    }
+}
+
+
+
+
+
+
+
+.new-main-container {
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.nav-pills .nav-link {
+    text-decoration: none !important;
+}
+.brand-logo {
+    font-family: 'Poppins' !important;
+    font-size: 30px;
+    font-weight: 100;
+    color: #000;
+}
+.brand-logo.bold{
+    font-family: 'Poppins' !important;
+    font-family: 'Inter-Bold';
+    font-weight: 600;
+}
+
+
+
+
+.logoCell {
+    border: solid 1px var(--ato-bright-blue);
+    background-color: var(--ato-bright-blue);
+    color: #fff;
+    padding: 13px;
+    font-size: 16px;
+    max-width: 48px;
+    min-width: 48px;
+}
+
+.loading-spinner-holder>.loading-spiner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    broder-top: 16px solid var(--ato-dark-ocean-blue);
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% {transform: route(360deg); }
+}
+
+
+
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    font-size: large !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: var(--ato-dark-ocean-blue);
+    border-color: #dee2e6 #dee2e6 #fff;
+}

@@ -1,0 +1,48 @@
+<body ng-app="ELP_Portal">
+    <div class="nav-container" id="ATOFCLientPortal">
+        <nav id="main-navbar navbar-expand-lg" class="navbar navbar-expand-lg navbar-dark" aria-label="Navigation Bar" roel="'navigation">
+            <div class="navbar-brand">
+                <a class="btn nav-btn" href="#"><span><i class="fa fa-ellipsis-v" aria-hidden="true"
+                            style="font-size:22px;"></i><i class="fa fa-ellipsis-v" aria-hidden="true" 
+                            style="margin-left:2px;font-size:22px;"></i><i class="fa fa-ellipsis-v" aria-hidden="true" 
+                            style="margin-left:2px;font-size:22px;"></i></span></a>
+                <a href="#welcome">
+                    <img src="assets/img/ato-logo-white.png" style="height: 48px; margin-left: 10px" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+                <div class="text-end">
+                    <i class="fa fa-bullhorn btn" aria-hidden="true" style="color: #fff;"></i>
+                    <span class="btn nav-btn" style="color: #fff;">?</span>
+                </div>
+
+                <div href="#" class="nav-item nav-link py-3" style="margin-right:15px;color:#fff;" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <ul class="nav nav-pills bd-light"
+            style="background-color: #fff; margin-top:0px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px;">
+            <div class="logoCell">AP</div>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><span class="brand-logo">ELP PROGRAMS</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="scroll-container">
+        <main role="main">
+            <div class="container new-main-container">
+                <div class="row mb-3">
+                </div>
+                <div ng-view></div>
+            </div>
+        </main>
+    </div>
+    <div class="loading-spinner-holder" data-loading><div class="loading-spinner"><div class="spinner"></div></div></div>
+</body>

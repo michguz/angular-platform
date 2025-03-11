@@ -1,3 +1,6 @@
+<p><br /></p>
+<p><br /></p>
+
 <div layout="row" class="ng-scope">
     <div class="col-12">
         <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
@@ -25,9 +28,9 @@
                     </div>
                 </div>
 
-                <ng-include src="'views/partials/elp_tabular.html'"></ng-include>
+                <!-- <ng-include src="'views/partials/elp_tabular.html'"></ng-include> -->
 
-                <ng-include src="'views/partials/elp_title.html'"></ng-include>
+                <!-- <ng-include src="'views/partials/elp_title.html'"></ng-include> -->
 
                 <div class="row" ng-show="($root.CurrentUser.Role == 'Admin')">
                     <hr class="solid-blue-1" />
@@ -49,14 +52,14 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Bidder</th>
-                                    <tr>Location</tr>
-                                    <tr>BSL/Area</tr>
-                                    <tr>Submitted</tr>
-                                    <tr>Approved</tr>
-                                    <tr>Actions</tr>
+                                    <th>Location</th>
+                                    <th>BSL/Area</th>
+                                    <th>Submitted</th>
+                                    <th>Approved</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <!-- <tbody>
                                 <tr ng-repeat="item in SelectedPlanBids" ng-cloak>
                                     <td>{{item.ID}}</td>
                                     <td>{{item.BidderID}}</td>
@@ -66,7 +69,7 @@
                                     <td>{{item.Submitted}}</td>
                                     <td></td>
                                 </tr>
-                            </tbody>
+                            </tbody> -->
                         </table>
                     </div>
                 </div>

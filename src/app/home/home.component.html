@@ -24,7 +24,55 @@
                         </div> 
                     </div>
                 </div>
+
+                <ng-include src="'views/partials/elp_tabular.html'"></ng-include>
+
+                <ng-include src="'views/partials/elp_title.html'"></ng-include>
+
+                <div class="row" ng-show="($root.CurrentUser.Role == 'Admin')">
+                    <hr class="solid-blue-1" />
+                    <div class="col-md-12">
+                        <div id="calendar-container">
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offconvasBids" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Plan bids</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Bidder</th>
+                                    <tr>Location</tr>
+                                    <tr>BSL/Area</tr>
+                                    <tr>Submitted</tr>
+                                    <tr>Approved</tr>
+                                    <tr>Actions</tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in SelectedPlanBids" ng-cloak>
+                                    <td>{{item.ID}}</td>
+                                    <td>{{item.BidderID}}</td>
+                                    <td>{{item.SiteLocation}}</td>
+                                    <td>{{item.BSL_Area}}</td>
+                                    <td>{{item.Submitted}}</td>
+                                    <td>{{item.Submitted}}</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</div><html xmlns:mso="urn:schemas-micrsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+    
+</head>

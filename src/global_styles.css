@@ -184,7 +184,7 @@
 .spinner {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    broder-top: 16px solid var(--ato-dark-ocean-blue);
+    border-top: 16px solid var(--ato-dark-ocean-blue);
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;

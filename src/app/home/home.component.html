@@ -1,0 +1,81 @@
+<p><br /></p>
+<p><br /></p>
+
+<div layout="row" class="ng-scope">
+    <div class="col-12">
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+            <div class="col-md-12 mb-2" style="background-color: #e3f2fd; padding:10px;">
+                <i class="fa fa-list" aria-hidden="true"></i> &nbsp;<span class="fs-5 fw-semibold" ng-bind="Title"></span>
+            </div>
+            <div>
+                <div class="col-md-12 mb-2">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a class="btn btn-primary pull-right" href="index.aspx#!/new-program"><i class="fa fa-file" aria-hidden="true"></i> Program</a>
+                    </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFLushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Filters
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Custom filters to go here</div>
+                        </div> 
+                    </div>
+                </div>
+
+                <!-- <ng-include src="'views/partials/elp_tabular.html'"></ng-include> -->
+
+                <!-- <ng-include src="'views/partials/elp_title.html'"></ng-include> -->
+
+                <div class="row" ng-show="($root.CurrentUser.Role == 'Admin')">
+                    <hr class="solid-blue-1" />
+                    <div class="col-md-12">
+                        <div id="calendar-container">
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offconvasBids" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Plan bids</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Bidder</th>
+                                    <th>Location</th>
+                                    <th>BSL/Area</th>
+                                    <th>Submitted</th>
+                                    <th>Approved</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <!-- <tbody>
+                                <tr ng-repeat="item in SelectedPlanBids" ng-cloak>
+                                    <td>{{item.ID}}</td>
+                                    <td>{{item.BidderID}}</td>
+                                    <td>{{item.SiteLocation}}</td>
+                                    <td>{{item.BSL_Area}}</td>
+                                    <td>{{item.Submitted}}</td>
+                                    <td>{{item.Submitted}}</td>
+                                    <td></td>
+                                </tr>
+                            </tbody> -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><html xmlns:mso="urn:schemas-micrsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+    
+</head>
